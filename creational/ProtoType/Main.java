@@ -3,13 +3,13 @@ package creational.ProtoType;
 public class Main {
     public static void main(String[] args) {
         // Create original document
-        Creational.ProtoType.WordDocument originalDoc = new Creational.ProtoType.WordDocument("Prototype Pattern Example");
+        DesignPatterns.Creational.ProtoType.WordDocument originalDoc = new DesignPatterns.Creational.ProtoType.WordDocument("Prototype Pattern Example");
         originalDoc.addComment("Initial Comment");
 
         System.out.println("Original Document: " + originalDoc);
 
         // Clone the document
-        Creational.ProtoType.WordDocument clonedDoc = originalDoc.clone();
+        DesignPatterns.Creational.ProtoType.WordDocument clonedDoc = originalDoc.clone();
         clonedDoc.addComment("Cloned Document Comment");
 
         // Display both documents

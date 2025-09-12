@@ -31,7 +31,7 @@ public class StrategyPatternDemo {
         System.out.print("Enter amount to pay: ");
         int amount = scanner.nextInt();
 
-        behavioral.strategy.strategyPattern.PaymentService service = new behavioral.strategy.strategyPattern.PaymentService(strategy);
+        PaymentService service = new PaymentService(strategy);
         service.processPayment(amount);
 
 

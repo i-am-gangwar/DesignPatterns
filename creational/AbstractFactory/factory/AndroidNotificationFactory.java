@@ -1,8 +1,8 @@
-package Creational.AbstractFactory.factory;
-import Creational.AbstractFactory.notification.EmailNotification;
-import Creational.AbstractFactory.notification.Notification;
-import Creational.AbstractFactory.notification.PushNotification;
-import Creational.AbstractFactory.notification.SMSNotification;
+package DesignPatterns.Creational.AbstractFactory.factory;
+import DesignPatterns.Creational.AbstractFactory.notification.EmailNotification;
+import DesignPatterns.Creational.AbstractFactory.notification.Notification;
+import DesignPatterns.Creational.AbstractFactory.notification.PushNotification;
+import DesignPatterns.Creational.AbstractFactory.notification.SMSNotification;
 
 
 

@@ -1,4 +1,4 @@
-package Creational.Singleton.notThreadSafe;
+package DesignPatterns.Creational.Singleton.notThreadSafe;
 
 public class Logger {
 

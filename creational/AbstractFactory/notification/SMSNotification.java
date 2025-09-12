@@ -1,4 +1,4 @@
-package Creational.AbstractFactory.notification;
+package DesignPatterns.Creational.AbstractFactory.notification;
 
 public class SMSNotification implements Notification{
 

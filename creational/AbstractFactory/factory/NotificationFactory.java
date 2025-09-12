@@ -1,6 +1,6 @@
-package Creational.AbstractFactory.factory;
+package DesignPatterns.Creational.AbstractFactory.factory;
 
-import Creational.AbstractFactory.notification.Notification;
+import DesignPatterns.Creational.AbstractFactory.notification.Notification;
 
 public interface NotificationFactory {
     public Notification createNotification(String notificationType);

@@ -1,4 +1,4 @@
-package Creational.Singleton.threadSafe;
+package DesignPatterns.Creational.Singleton.threadSafe;
 
 public class Main {
 

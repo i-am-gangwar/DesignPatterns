@@ -1,4 +1,4 @@
-package Creational.Factory;
+package DesignPatterns.Creational.Factory;
 
 public class CardPayment implements Payment {
 

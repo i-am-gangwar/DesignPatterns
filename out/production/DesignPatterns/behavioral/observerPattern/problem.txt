@@ -92,18 +92,3 @@ When to use
 	• When state is complex and you don’t want to push all of it to every observer.
 	• When you want future flexibility for observers to read additional state without changing notify signature.
 
-
-
-Practical considerations & best practices
-
-Snapshot the observer list when notifying (copy to a new list) so observers can add/remove during notification without ConcurrentModificationException.
-
-Threading: if notifications are long-running or you don't want to block the subject, dispatch updates asynchronously (executor/service). But handle ordering if you need strict order.
-
-Error isolation: catch exceptions from observers so one bad observer doesn’t stop the rest.
-
-Event object: instead of primitive push args, consider a small event class (TemperatureChangeEvent { oldTemp, newTemp, time }). This is push but more extensible.
-
-Memory / payload size: don’t push huge objects to many observers — either push a small event or let observers pull from the subject.
-
-Deprecation note (Java): Java’s java.util.Observer/Observable is deprecated — prefer custom implementation or event frameworks (RxJava, event buses) or DI frameworks for complex systems.
