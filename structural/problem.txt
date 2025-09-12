@@ -1,0 +1,61 @@
+1. Theory
+What is it?
+
+The Decorator Pattern lets you dynamically add new behavior or responsibilities to objects at runtime, without changing their code.
+It’s like wrapping a gift box 🎁 in layers of decorative paper → each wrapper adds something new but still keeps the gift usable.
+
+Structure
+
+Component (interface/abstract class) → defines the core behavior.
+
+Concrete Component → the main object we want to decorate.
+
+Decorator (abstract class) → has a reference to a Component, implements Component, and forwards calls.
+
+Concrete Decorators → extend Decorator to add new behavior.
+
+Example (real-world)
+
+Coffee shop ☕:
+
+Base: SimpleCoffee → ₹50
+
+Decorators: MilkDecorator, SugarDecorator
+
+You can wrap coffee with sugar, then milk, etc. → behavior (cost + description) extends dynamically.
+
+Without Decorator
+
+You might use inheritance:
+
+class Coffee {}
+class MilkCoffee extends Coffee {}
+class SugarCoffee extends Coffee {}
+class MilkSugarCoffee extends Coffee {}
+
+
+💥 Explosion of subclasses as you add combinations.
+
+With Decorator
+
+You compose instead of inherit:
+
+SimpleCoffee wrapped with MilkDecorator wrapped with SugarDecorator.
+
+Flexible, no class explosion.
+
+🔹 2. Problem to Try (Without Decorator First)
+
+Problem: Coffee ordering system.
+
+A Coffee class with a method getCost() and getDescription().
+
+Add-ons: milk (+10), sugar (+5), whipped cream (+15).
+
+Without decorator, you’ll probably add flags/if-else inside Coffee or create multiple subclasses.
+
+👉 Task for you:
+
+First, try without decorator (maybe using if-else or separate subclasses).
+
+Then we’ll refactor into decorator version.
