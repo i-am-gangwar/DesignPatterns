@@ -1,0 +1,37 @@
+## 🎯 **Problem Statement for Singleton Pattern:**
+
+---
+
+### 🚩 **Scenario:**
+
+You are developing a **Logger System** for an enterprise application that logs all application events to a file. 
+
+✅ **Requirements:**
+- Only **one instance** of the `Logger` class should exist across the application.  
+- The `Logger` should have a method `log(String message)` that appends the log to a file or console.  
+- Ensure that multiple threads accessing the `Logger` do not create multiple instances.  
+
+---
+
+### 🎯 **Task:**
+1. Create a `Logger` class that follows the **Singleton Pattern**.  
+2. Implement a method `log(String message)` that prints the log to the console (for simplicity).  
+3. Ensure **thread safety** while creating the instance.  
+
+---
+
+### 💡 **Bonus Challenge:**
+- Add a method `getLogCount()` to keep track of how many log messages have been recorded.  
+- Make sure the method returns the correct count, even in multi-threaded scenarios.
+
+---
+
+✅ **Try this and let me know if you face any issues!** 🚀
+
+
+
+Steps to make Singleton
+
+1-- make constrcutor private otherwise it will create new object every time.
+2. create a static variable to hold the instance of object why static bcoz it will acces by class not objects.
+3. 

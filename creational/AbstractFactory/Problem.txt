@@ -1,0 +1,104 @@
+## 🎯 **Abstract Factory Pattern: Practice Problem**
+
+### 📚 **Problem Statement: Design a Notification System Using Abstract Factory**
+
+---
+
+## 📝 **Scenario:**
+
+You have been tasked with building a **Notification System** that can send different types of notifications (e.g., SMS, Email, and Push Notifications) for different platforms (e.g., Android and iOS).  
+
+The system should be flexible so that:
+
+✅ It supports sending **multiple types of notifications**.  
+✅ It can easily be extended to add new notification types or platforms.  
+✅ The client should not be aware of the concrete classes being used.  
+
+---
+
+## 📌 **Requirements:**
+
+1. **Notification Types:**
+   - SMS Notification
+   - Email Notification
+   - Push Notification
+
+2. **Platforms Supported:**
+   - Android
+   - iOS
+
+3. **Objective:**
+   - Implement the **Abstract Factory Pattern** to create notifications for different platforms.
+   - Ensure that platform-specific notifications are created without changing client code.
+   - The system should be extensible to support new platforms or notification types easily.
+
+---
+
+## ⚡️ **Functional Requirements:**
+
+- `Notification` interface with a method `sendNotification(String message)`.
+- Concrete classes for different types of notifications (`SMSNotification`, `EmailNotification`, `PushNotification`).
+- `NotificationFactory` interface with a method `createNotification(String type)`.
+- Concrete factories for platforms (`AndroidNotificationFactory`, `iOSNotificationFactory`).
+- `NotificationService` class to get the appropriate factory and send notifications.
+
+---
+
+## 🔥 **Challenge:**
+
+1. Design the class hierarchy and implement the **Abstract Factory Pattern**.
+2. Create platform-specific notification factories (`Android` and `iOS`).
+3. Use the factories to generate appropriate notifications for each platform.
+4. Ensure that the client code can send any type of notification without knowing about the underlying implementation.
+
+---
+
+## 🎯 **Expected Usage:**
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        // Get Android Notification Factory
+        NotificationFactory androidFactory = FactoryProducer.getFactory("ANDROID");
+        Notification smsNotification = androidFactory.createNotification("SMS");
+        smsNotification.sendNotification("Hello from Android!");
+
+        // Get iOS Notification Factory
+        NotificationFactory iosFactory = FactoryProducer.getFactory("IOS");
+        Notification emailNotification = iosFactory.createNotification("EMAIL");
+        emailNotification.sendNotification("Welcome to iOS!");
+
+        // Send Push Notification on Android
+        Notification pushNotification = androidFactory.createNotification("PUSH");
+        pushNotification.sendNotification("Push Notification Sent on Android!");
+    }
+}
+```
+
+---
+
+## 🚀 **Bonus Challenge:**
+
+✅ Add support for a new platform: **Windows**.  
+✅ Add support for a new notification type: **In-App Notification**.  
+
+---
+
+## 📝 **Hints:**
+
+1. Create a `Notification` interface.
+2. Implement concrete notification classes.
+3. Design an abstract factory `NotificationFactory` with a method `createNotification(String type)`.
+4. Create platform-specific factories (`AndroidNotificationFactory`, `iOSNotificationFactory`).
+5. Use a `FactoryProducer` to return the appropriate factory.
+
+---
+
+## 🎉 **Difficulty Level:**
+- 🟢 Basic: Implement basic notification types and platforms.
+- 🟡 Intermediate: Add new notification types and platforms.
+- 🔴 Advanced: Implement error handling and logging.
+
+---
+
+Let me know when you're ready, and I’ll guide you step-by-step with hints and solutions! 🚀😊

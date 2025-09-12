@@ -1,0 +1,39 @@
+1. Definition
+The Strategy Pattern is a behavioral design pattern that lets you define a family of algorithms (strategies), encapsulate each one, and make them interchangeable at runtime without changing the client code.
+👉 In short: It separates the behavior (algorithm) from the context (object using it).
+
+2. Key Concepts
+	• Context → The main class that uses a strategy.
+	• Strategy Interface → Common interface for all algorithms.
+	• Concrete Strategies → Implementations of the algorithm.
+
+3. Real-World Examples
+	• Payment methods in e-commerce (Credit Card, PayPal, UPI).
+	• Sorting algorithms (QuickSort, MergeSort, HeapSort).
+	• Compression strategies (ZIP, RAR, 7z).
+	• Travel routes (Car, Bike, Train, Flight).
+
+
+
+5. Advantages
+✅ Avoids if-else or switch hell.
+✅ Easily extendable (just add new strategies).
+✅ Promotes Open/Closed Principle (open for extension, closed for modification).
+✅ Behavior change at runtime.
+
+6. Disadvantages
+❌ More classes → more complexity.
+❌ Client must know which strategy to use.
+
+7. When to Use
+	• When you have multiple algorithms that can be swapped at runtime.
+	• When you see too many conditionals (if/else) for selecting behavior.
+	• When you want to isolate algorithm implementation from the main class.
+
+
+Example-
+https://medium.com/@eshikashah2001/understanding-the-strategy-design-pattern-in-software-engineering-8774086a1895
+
+Strategy Pattern, The Best Software Design Pattern
+
+

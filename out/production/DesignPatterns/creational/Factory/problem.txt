@@ -1,0 +1,110 @@
+## 🎯 **Factory Method Pattern: Practice Problem**
+
+---
+
+## 📚 **Problem Statement: Design a Payment Processing System Using Factory Pattern**
+
+---
+
+## 📝 **Scenario:**
+
+You are tasked with designing a **Payment Processing System** that supports multiple payment methods. The system should be flexible enough to support:
+
+✅ Different payment methods, such as:
+- **Credit Card**
+- **UPI (Unified Payments Interface)**
+- **Net Banking**
+
+✅ New payment methods can be added without modifying existing client code.
+
+✅ The client should only need to specify the **payment type** and receive an appropriate object that handles the payment.
+
+---
+
+## 📌 **Requirements:**
+
+### 🎯 **Functional Requirements:**
+
+1. **Payment Types:**
+   - Credit Card Payment
+   - UPI Payment
+   - Net Banking Payment
+
+2. **Objective:**
+   - Use the **Factory Method Pattern** to create appropriate payment objects.
+   - The client code should not be aware of the underlying class names.
+
+3. **Payment Interface:**
+   - Define a `Payment` interface with a method `processPayment(double amount)`.
+
+4. **Concrete Classes:**
+   - `CreditCardPayment`  
+   - `UPIPayment`  
+   - `NetBankingPayment`  
+
+5. **Factory Class:**
+   - `PaymentFactory` class to create appropriate `Payment` objects.
+
+---
+
+## ⚡️ **Challenge:**
+
+✅ Design the class hierarchy and implement the **Factory Pattern**.  
+✅ Create a `PaymentFactory` class that returns the appropriate payment method.  
+✅ Add a new payment method (`PayPal`) without modifying the existing client code.  
+
+---
+
+## 🎯 **Expected Usage:**
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        // Get Credit Card Payment
+        Payment payment1 = PaymentFactory.getPayment("CREDITCARD");
+        payment1.processPayment(500.00);
+
+        // Get UPI Payment
+        Payment payment2 = PaymentFactory.getPayment("UPI");
+        payment2.processPayment(200.00);
+
+        // Get Net Banking Payment
+        Payment payment3 = PaymentFactory.getPayment("NETBANKING");
+        payment3.processPayment(1000.00);
+
+        // Try Invalid Payment Type
+        Payment invalidPayment = PaymentFactory.getPayment("CRYPTO");
+        if (invalidPayment == null) {
+            System.out.println("Invalid Payment Method Selected!");
+        }
+    }
+}
+```
+
+---
+
+## 🔥 **Bonus Challenge:**
+
+✅ Add a new payment type: **PayPal Payment**.  
+✅ Implement exception handling for unsupported payment types.  
+
+---
+
+## 📚 **Hints:**
+
+1. Define a `Payment` interface and concrete classes for each payment type.
+2. Create a `PaymentFactory` with a method `getPayment(String type)`.
+3. Use `switch` or `if-else` in the factory to return the appropriate payment object.
+4. Ensure that the client code does not use `new` to create objects directly.
+
+---
+
+## 🎉 **Difficulty Levels:**
+
+- 🟢 Basic: Implement 3 payment types with basic factory logic.
+- 🟡 Intermediate: Add a new payment method dynamically.
+- 🔴 Advanced: Implement exception handling and logging for invalid payment types.
+
+---
+
+Ready to give it a try? Let me know if you need any guidance while implementing! 🚀😊

@@ -1,0 +1,106 @@
+## 🎯 **Prototype Design Pattern: Practice Problem**
+
+---
+
+## 📚 **Problem Statement: Design a Document Management System Using Prototype Pattern**
+
+---
+
+## 📝 **Scenario:**
+
+You have been tasked with creating a **Document Management System** that allows users to create, clone, and modify different types of documents. Each document may have different types such as:
+
+✅ **Word Document**  
+✅ **PDF Document**  
+✅ **Excel Document**  
+
+---
+
+## 📌 **Requirements:**
+
+### 🎯 **Functional Requirements:**
+
+1. **Document Interface:**
+   - Define a `Document` interface with a method `cloneDocument()` for cloning objects.
+   
+2. **Concrete Classes:**
+   - `WordDocument`
+   - `PDFDocument`
+   - `ExcelDocument`
+   
+3. **Prototype Functionality:**
+   - Clone a document when a new one is requested with similar content.
+   - New documents should be created quickly by cloning instead of creating from scratch.
+   
+4. **Main Objective:**
+   - Use the **Prototype Pattern** to allow cloning of different document types with minimal overhead.
+
+---
+
+## 📌 **Challenge:**
+
+✅ Design the class hierarchy and implement the **Prototype Pattern**.  
+✅ Add a `DocumentRegistry` that keeps prototypes for different document types.  
+✅ Allow modifications to cloned documents without affecting the original.  
+
+---
+
+## 🎯 **Expected Usage:**
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        // Create Document Registry
+        DocumentRegistry registry = new DocumentRegistry();
+
+        // Get a cloned Word Document
+        Document wordDoc = registry.getDocument("WORD");
+        wordDoc.setContent("This is a Word document");
+        System.out.println(wordDoc);
+
+        // Get a cloned PDF Document
+        Document pdfDoc = registry.getDocument("PDF");
+        pdfDoc.setContent("This is a PDF document");
+        System.out.println(pdfDoc);
+
+        // Get a cloned Excel Document
+        Document excelDoc = registry.getDocument("EXCEL");
+        excelDoc.setContent("This is an Excel document");
+        System.out.println(excelDoc);
+
+        // Cloning existing document
+        Document clonedWordDoc = wordDoc.cloneDocument();
+        clonedWordDoc.setContent("This is a cloned Word document");
+        System.out.println(clonedWordDoc);
+    }
+}
+```
+
+---
+
+## 🔥 **Bonus Challenge:**
+
+✅ Add a new document type: **PowerPoint Document**.  
+✅ Allow deep cloning of complex objects.  
+✅ Handle modifications without affecting the original document.  
+
+---
+
+## 📚 **Hints:**
+
+1. Define a `Document` interface with a `cloneDocument()` method.
+2. Implement concrete document classes that override `cloneDocument()` properly.
+3. Create a `DocumentRegistry` to register and manage prototypes.
+4. Ensure cloned documents are **deep copies** to prevent unintended changes.
+
+---
+
+## 🎉 **Difficulty Levels:**
+
+- 🟢 Basic: Implement cloning for 3 document types with shallow copies.
+- 🟡 Intermediate: Add deep cloning and a document registry.
+- 🔴 Advanced: Add complex document attributes that need deep cloning.
+
+---
+
+💡 **Ready to take on the challenge?** Let me know if you need any hints or guidance during implementation! 🚀😊

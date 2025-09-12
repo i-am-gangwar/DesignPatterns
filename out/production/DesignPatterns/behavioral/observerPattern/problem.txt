@@ -1,0 +1,94 @@
+Observer Design Pattern – Theory
+1. Definition
+The Observer Pattern is a behavioral design pattern where:
+	• An object (Subject/Publisher) maintains a list of dependents (Observers/Subscribers).
+	• When the subject’s state changes, it notifies all observers automatically.
+👉 Think: “Publish–Subscribe mechanism”.
+
+2. Real-World Examples
+	• YouTube channel subscribers → When channel uploads a new video, all subscribers get notified.
+	• Stock market apps → When stock price changes, all registered apps/clients get update.
+	• Weather station → Sensors publish data, multiple displays (phone app, website, smartwatch) observe changes.
+
+
+
+3. Key Components
+	• Subject (Observable/Publisher)
+		○ Maintains a list of observers.
+		○ Provides attach, detach, notify methods.
+	• Observer (Subscriber/Listener)
+		○ Defines update() method to be called when subject changes.
+	• Concrete Subject
+		○ Stores actual state/data.
+		○ Calls notifyObservers() when state changes.
+	• Concrete Observers
+		○ React to updates (UI refresh, logs, alerts, etc.).
+
+
+
+
+
+
+
+5. Advantages
+✅ Loose coupling (Subject doesn’t know details of Observers).
+✅ Easy to add/remove observers dynamically.
+✅ Implements “push” mechanism of communication.
+6. Disadvantages
+❌ Can cause performance issues if many observers.
+❌ Notifications may arrive in unexpected order.
+❌ Hard to debug if observers have side-effects.
+
+
+7. When to Use
+	• When one object’s state change should notify others automatically.
+	• Event-driven systems (GUI, messaging, stock updates).
+
+
+Problem for You
+Scenario:
+You are building a Weather Station system.
+	• It collects temperature updates.
+	• Multiple displays (e.g., PhoneDisplay, WebDisplay, TVDisplay) should update automatically whenever temperature changes.
+Task:
+	1. Without Observer Pattern
+		○ Create WeatherStation with a setTemperature() method.
+		○ Inside it, manually call update methods of phone, web, and TV displays.
+		○ Problem: If you add a new display, you must modify WeatherStation.
+	2. With Observer Pattern
+		○ Create Subject interface (addObserver, removeObserver, notifyObservers).
+		○ WeatherStation is the concrete subject.
+		○ Each display implements Observer interface with update(temp).
+		○ When temperature changes, station calls notifyObservers().
+
+
+
+Push model
+What it is: the Subject pushes the data (or event object) to each observer via the update(...) call.
+Signature example: observer.update(newTemperature).
+Pros
+	• Fewer calls: subject sends exactly the data observers need right away.
+	• Simpler for observers that only need that one piece of info.
+	• Good when the change payload is small and self-contained (e.g., a single numeric temperature).
+Cons
+	• Observers become coupled to the pushed data format — if you change what you push, many observers may need updates.
+	• If the payload is large, you may waste bandwidth/time pushing unnecessary data.
+	• Harder to extend if observers need more than what’s pushed.
+
+
+Pull model
+What it is: the Subject notifies observers only that something changed, usually by passing a reference to itself (or no payload). Each observer then pulls whatever state it needs by calling getters on the subject.
+Signature example: observer.update(subject) and inside update() the observer calls subject.getTemperature().
+Pros
+	• Observers decide what data they want — flexible and good when observers need different pieces of state.
+	• Loose coupling of observer to the internal representation (observer only needs accessors).
+	• Easier to change what internal state the subject exposes (via getters) without changing update signature.
+Cons
+	• Extra calls: each observer may invoke one or more getters → more interaction.
+	• Observers must know the subject API (need accessors).
+	• If many observers pull heavy state repeatedly, performance may suffer.
+When to use
+	• When observers may require different parts of the subject’s state.
+	• When state is complex and you don’t want to push all of it to every observer.
+	• When you want future flexibility for observers to read additional state without changing notify signature.
+

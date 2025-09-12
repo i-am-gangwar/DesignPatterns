@@ -1,0 +1,29 @@
+## 🎯 **Problem Statement for Builder Pattern:**
+
+---
+
+### 🚩 **Scenario:**
+
+You are tasked with creating a **Pizza Ordering System** where customers can customize their pizza by selecting:  
+
+✅ **Pizza Size:** Small, Medium, or Large.  
+✅ **Crust Type:** Thin Crust, Cheese Burst, or Pan Crust.  
+✅ **Toppings:** Multiple options like Onion, Capsicum, Olives, etc.  
+✅ **Cheese and Extra Cheese:** Optional Add-ons.  
+
+---
+
+### 🎯 **Task:**
+1. Design a `Pizza` class with multiple optional and mandatory attributes.  
+2. Use the **Builder Pattern** to allow step-by-step customization of the pizza.  
+3. Implement a method `build()` that returns the final `Pizza` object.  
+
+---
+
+### 💡 **Bonus Challenge:**
+- Add a method `calculatePrice()` that calculates the price based on selected options.  
+- Ensure that the pizza cannot be modified after it is built.  
+
+---
+
+✅ **Give it a try and let me know if you need any help!** 🍕🚀
