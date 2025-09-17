@@ -1,7 +1,6 @@
 package practiceQ.parkingSpot.spotService;
 
 import practiceQ.parkingSpot.Vehicle;
-import practiceQ.parkingSpot.VehicleType;
 import practiceQ.parkingSpot.spotEntity.ParkingSpot;
 
 import java.util.List;
@@ -16,7 +15,7 @@ public abstract class ParkingSpotManager {
 
     public ParkingSpot findParkingSpot(){
         for(ParkingSpot spot: parkingSpotList){
-            if(spot.isAvailable()){
+            if(spot.getIsAvailable()){
                 return spot;
             }
         }
@@ -35,6 +34,7 @@ public abstract class ParkingSpotManager {
         ParkingSpot freeParkingSpot  = findParkingSpot();
         if(freeParkingSpot!=null){
             freeParkingSpot.setVehicle(vehicle);
+            freeParkingSpot.setAvailable(false);
             return true;
         }
         return false; // No space available
@@ -50,7 +50,7 @@ public abstract class ParkingSpotManager {
     // Remove vehicle (free the spot)
     public boolean removeVehicle(String vehicleNumber){
         for(ParkingSpot spot: parkingSpotList){
-            if(!spot.isAvailable()){
+            if(!spot.getIsAvailable()){
                 if(spot.getVehicle().getNumber().equals(vehicleNumber)){
                     spot.removeVehicle();
                     return true;
@@ -68,8 +68,11 @@ public abstract class ParkingSpotManager {
     // getter and setter
 
 
-    public List<ParkingSpot> getParkingSpotList() {
-        return parkingSpotList;
+    // 👉 This gives you the full list
+    public void getAllParkingSpots() {
+        for(ParkingSpot spot: parkingSpotList){
+            System.out.println(spot.toString());
+        }
     }
 
     public void setParkingSpotList(List<ParkingSpot> parkingSpotList) {

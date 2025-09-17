@@ -26,7 +26,7 @@ public abstract class ParkingSpot {
 
 
   // getter and setter
-    public boolean isAvailable() {
+    public boolean getIsAvailable() {
         return isAvailable;
     }
 
@@ -50,7 +50,10 @@ public abstract class ParkingSpot {
         this.vehicle = vehicle;
     }
 
-
+    @Override
+    public String toString() {
+        return id + " -> " + (isAvailable ? "Empty" : vehicle.getNumber());
+    }
 
 
 

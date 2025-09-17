@@ -5,8 +5,11 @@ import practiceQ.parkingSpot.spotEntity.ParkingSpot;
 public class Vehicle {
     private String number;
     private VehicleType type;
-    private ParkingSpot parkingSpot;
 
+    public Vehicle(String number, VehicleType vehicleType){
+        this.number = number;
+        this.type = vehicleType;
+    }
     public String getNumber(){
         return number;
     }

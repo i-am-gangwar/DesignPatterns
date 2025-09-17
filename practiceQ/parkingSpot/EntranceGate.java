@@ -22,8 +22,9 @@ public class EntranceGate {
        }
       ParkingSpot parkingSpot = parkingSpotManager.findAssignedSpot(vehicle);
         Ticket ticket = new Ticket(UUID.randomUUID().toString(), vehicle, parkingSpot);
-        System.out.println("Ticket Generated: " + ticket.getId() +
-                " for vehicle " + vehicle.getNumber()+ "for spot "+ ticket.getParkingSpot());
+        System.out.println("Ticket Generated: Ticket id " + ticket.getId() +
+                " for vehicle " + vehicle.getNumber()+ "for spot "+ ticket.getParkingSpot().getId());
+
         return ticket;
 
 

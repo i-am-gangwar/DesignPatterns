@@ -25,7 +25,7 @@ public class ExitGate {
             paymentStrategy = new FourWheelerPayment();
         }
         double fee = paymentStrategy.calculateFee(ticket);
-        System.out.println("💰 Parking Fee: ₹" + fee);
+        System.out.println("💰 Parking Fee: ₹" + fee + "for vehicle "+ vehicle.getNumber());
 
         // free the spot
         parkingSpotManager.removeVehicle(vehicle.getNumber());

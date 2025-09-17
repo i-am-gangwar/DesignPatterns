@@ -6,13 +6,15 @@ import practiceQ.parkingSpot.spotEntity.FourWheelerSpot;
 import java.time.LocalDateTime;
 
 public class FourWheelerPayment implements PaymentStrategy{
-    FourWheelerSpot fourWheelerSpot;
+
     @Override
     public double calculateFee(Ticket ticket) {
+        LocalDateTime localDateTime = LocalDateTime.now();
         long mintues = java.time.Duration.between(
-                ticket.getEntryTime(), LocalDateTime.now()
+                ticket.getEntryTime(), localDateTime.plusMinutes(150)
                 ).toMinutes();
-
+        FourWheelerSpot fourWheelerSpot = new FourWheelerSpot(ticket.getParkingSpot().getId());
+        updateExitTime(ticket);
         return ((double) mintues /60)* fourWheelerSpot.getPricePerHour();
     }
 

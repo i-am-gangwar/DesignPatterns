@@ -1,11 +1,14 @@
 package practiceQ.parkingSpot.spotService;
+import practiceQ.parkingSpot.spotEntity.TwoWheelerSpot;
+import java.util.ArrayList;
 
-import practiceQ.parkingSpot.spotEntity.ParkingSpot;
-
-import java.util.List;
 
 public class TwoWheelerSpotManager extends ParkingSpotManager{
-    TwoWheelerSpotManager(List<ParkingSpot> parkingSpotList) {
-        super(parkingSpotList);
+   public TwoWheelerSpotManager(int capacity) {
+       super(new ArrayList<>());
+            for (int i = 1; i <= capacity; i++) {
+                parkingSpotList.add(new TwoWheelerSpot("2W-" + i));
+            }
+
     }
 }
