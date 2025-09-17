@@ -38,6 +38,8 @@ public class TicTacToeGame {
                      while(true){
                          row = scanner.nextInt();
                          column = scanner.nextInt();
+                         if(!inputValidation(row,column))
+                             continue;
                          if(gameBoard.board[row][column]!=null){
                              System.out.println("Piece already exist try again");
                          }
@@ -53,6 +55,8 @@ public class TicTacToeGame {
                     while(true){
                         row = scanner.nextInt();
                         column = scanner.nextInt();
+                        if(!inputValidation(row,column))
+                            continue;
                         if(gameBoard.board[row][column]!=null){
                             System.out.println("Piece already exist try again");
                         }
@@ -76,7 +80,18 @@ public class TicTacToeGame {
 
     }
 
+ public boolean inputValidation(int row, int column){
+     if(row>= gameBoard.size || column>= gameBoard.size){
+         System.out.println("Invalid input try gain with values less then "+ gameBoard.size);
+         return false;
+     }
+     else if(row<0 || column<0){
+         System.out.println("Invalid input try gain with values greater then "+ 0);
+         return  false;
+     }
+     return true;
 
+ }
 
     public void printBoard(){
         for(int i =0;i< gameBoard.size;i++){
