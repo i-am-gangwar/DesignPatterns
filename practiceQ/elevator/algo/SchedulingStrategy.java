@@ -1,4 +1,4 @@
-package practiceQ.algo;
+package practiceQ.elevator.algo;
 
 import practiceQ.elevator.Direction;
 import practiceQ.elevator.lift.ElevatorController;

@@ -1,6 +1,6 @@
 package practiceQ.elevator.building;
 
-import practiceQ.algo.SchedulingStrategy;
+import practiceQ.elevator.algo.SchedulingStrategy;
 import practiceQ.elevator.Direction;
 import practiceQ.elevator.lift.ElevatorController;
 
