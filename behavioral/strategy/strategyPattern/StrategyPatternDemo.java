@@ -1,4 +1,4 @@
-package behavioral.strategy.strategyPattern;
+package DesignPatterns.behavioral.strategy.strategyPattern;
 
 import behavioral.strategy.strategyPattern.concreteStrategies.CardPayment;
 import behavioral.strategy.strategyPattern.concreteStrategies.UPIPayment;
@@ -31,7 +31,7 @@ public class StrategyPatternDemo {
         System.out.print("Enter amount to pay: ");
         int amount = scanner.nextInt();
 
-        PaymentService service = new PaymentService(strategy);
+        behavioral.strategy.strategyPattern.PaymentService service = new behavioral.strategy.strategyPattern.PaymentService(strategy);
         service.processPayment(amount);
 
 

@@ -1,7 +1,4 @@
-package structural.withDecoratorPattern;
-
-import structural.WithOutDecoratorPattern.MilkCoffee;
-import structural.WithOutDecoratorPattern.SugarCoffee;
+package DesignPatterns.structural.decoratorPattern.withDecoratorPattern;
 
 public class Client {
     public static void main(String[] args) {

@@ -7,5 +7,4 @@ public class Main {
             player.play("song.mp3");   // ✅ works fine
             player.play("movie.mp4");
         }
-
 }

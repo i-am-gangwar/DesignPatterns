@@ -1,4 +1,4 @@
-package structural.WithOutDecoratorPattern;
+package DesignPatterns.structural.decoratorPattern.WithOutDecoratorPattern;
 
 public class MilkSugarCoffee extends MilkCoffee{
     @Override
