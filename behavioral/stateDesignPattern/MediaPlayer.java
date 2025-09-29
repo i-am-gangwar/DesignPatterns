@@ -1,7 +1,7 @@
-package DesignPatterns.behavioral.stateDesignPattern;
+package behavioral.stateDesignPattern;
 
-import DesignPatterns.behavioral.stateDesignPattern.mediaPlayer.PauseState;
-import DesignPatterns.behavioral.stateDesignPattern.mediaPlayer.State;
+import behavioral.stateDesignPattern.mediaPlayer.PauseState;
+import behavioral.stateDesignPattern.mediaPlayer.State;
 
 import java.util.ArrayList;
 import java.util.List;

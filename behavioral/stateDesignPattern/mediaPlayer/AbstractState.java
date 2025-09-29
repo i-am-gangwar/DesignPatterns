@@ -1,6 +1,6 @@
-package DesignPatterns.behavioral.stateDesignPattern.mediaPlayer;
+package behavioral.stateDesignPattern.mediaPlayer;
 
-import DesignPatterns.behavioral.stateDesignPattern.MediaPlayer;
+import behavioral.stateDesignPattern.MediaPlayer;
 
 public abstract class AbstractState  implements State{
     public void play(MediaPlayer player) { System.out.println("Invalid play action"); }

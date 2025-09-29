@@ -1,5 +1,5 @@
-package DesignPatterns.behavioral.stateDesignPattern.mediaPlayer;
-import DesignPatterns.behavioral.stateDesignPattern.MediaPlayer;
+package behavioral.stateDesignPattern.mediaPlayer;
+import behavioral.stateDesignPattern.MediaPlayer;
 
 public class PlayState extends AbstractState {
     @Override

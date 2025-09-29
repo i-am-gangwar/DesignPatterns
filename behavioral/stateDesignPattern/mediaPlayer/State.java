@@ -1,6 +1,6 @@
-package DesignPatterns.behavioral.stateDesignPattern.mediaPlayer;
+package behavioral.stateDesignPattern.mediaPlayer;
 
-import DesignPatterns.behavioral.stateDesignPattern.MediaPlayer;
+import behavioral.stateDesignPattern.MediaPlayer;
 
 public interface State {
 

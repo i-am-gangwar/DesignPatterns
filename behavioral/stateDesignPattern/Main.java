@@ -1,4 +1,4 @@
-package DesignPatterns.behavioral.stateDesignPattern;
+package behavioral.stateDesignPattern;
 
 import java.util.List;
 
