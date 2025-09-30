@@ -1,6 +1,6 @@
-package DesignPatterns.behavioral.commandPattern;
+package behavioral.commandPattern;
 
-import DesignPatterns.behavioral.commandPattern.concreteCommands.NoCommand;
+import behavioral.commandPattern.concreteCommands.NoCommand;
 
 import java.util.Stack;
 

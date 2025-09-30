@@ -1,11 +1,11 @@
-package DesignPatterns.structural.bridgePattern;
+package structural.bridgePattern;
 
-import DesignPatterns.structural.bridgePattern.abstractions.AdvancedRemote;
-import DesignPatterns.structural.bridgePattern.abstractions.BasicRemote;
-import DesignPatterns.structural.bridgePattern.abstractions.RemoteControl;
-import DesignPatterns.structural.bridgePattern.implementor.Device;
-import DesignPatterns.structural.bridgePattern.implementor.Radio;
-import DesignPatterns.structural.bridgePattern.implementor.TV;
+import structural.bridgePattern.abstractions.AdvancedRemote;
+import structural.bridgePattern.abstractions.BasicRemote;
+import structural.bridgePattern.abstractions.RemoteControl;
+import structural.bridgePattern.implementor.Device;
+import structural.bridgePattern.implementor.Radio;
+import structural.bridgePattern.implementor.TV;
 
 public class BridgePatternDemo {
     public static void main(String[] args) {

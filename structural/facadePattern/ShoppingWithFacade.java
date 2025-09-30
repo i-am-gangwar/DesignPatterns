@@ -1,4 +1,4 @@
-package DesignPatterns.structural.facadePattern;
+package structural.facadePattern;
 
 // Client only talks to Facade
 public class ShoppingWithFacade {

@@ -1,4 +1,4 @@
-package DesignPatterns.structural.flyweight.withFlyweight;
+package structural.flyweight.withFlyweight;
 
 public class TreeType {
     private String type;

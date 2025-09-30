@@ -1,4 +1,4 @@
-package DesignPatterns.structural.flyweight;
+package structural.flyweight;
 
 public class Main {
 }

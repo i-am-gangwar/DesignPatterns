@@ -1,4 +1,4 @@
-package DesignPatterns.structural.bridgePattern.implementor;
+package structural.bridgePattern.implementor;
 
 public class TV implements Device {
     @Override

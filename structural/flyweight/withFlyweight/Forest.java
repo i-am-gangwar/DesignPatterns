@@ -1,4 +1,4 @@
-package DesignPatterns.structural.flyweight.withFlyweight;
+package structural.flyweight.withFlyweight;
 
 import java.util.ArrayList;
 import java.util.List;

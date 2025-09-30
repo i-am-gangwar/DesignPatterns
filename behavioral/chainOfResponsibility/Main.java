@@ -1,8 +1,8 @@
-package DesignPatterns.behavioral.chainOfResponsibility;
+package behavioral.chainOfResponsibility;
 
-import DesignPatterns.behavioral.chainOfResponsibility.logProcessor.DebugLogProcessor;
-import DesignPatterns.behavioral.chainOfResponsibility.logProcessor.ErrorLogProcessor;
-import DesignPatterns.behavioral.chainOfResponsibility.logProcessor.LogProcessor;
+import behavioral.chainOfResponsibility.logProcessor.DebugLogProcessor;
+import behavioral.chainOfResponsibility.logProcessor.ErrorLogProcessor;
+import behavioral.chainOfResponsibility.logProcessor.LogProcessor;
 
 public class Main {
 

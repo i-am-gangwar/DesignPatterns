@@ -1,4 +1,4 @@
-package DesignPatterns.structural.compositeDesignPattern.withoutCompositePattern;
+package structural.compositeDesignPattern.withoutCompositePattern;
 
 public class FileSystem {
     public static void main(String[] args) {

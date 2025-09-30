@@ -1,4 +1,4 @@
-package DesignPatterns.Creational.AbstractFactory.factory;
+package Creational.AbstractFactory.factory;
 
 public class FactoryProducer {
 

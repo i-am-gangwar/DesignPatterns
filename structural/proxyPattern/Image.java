@@ -1,4 +1,4 @@
-package DesignPatterns.structural.proxyPattern;
+package structural.proxyPattern;
 
 public interface Image {
 

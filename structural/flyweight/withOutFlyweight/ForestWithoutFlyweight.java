@@ -1,4 +1,4 @@
-package DesignPatterns.structural.flyweight.withOutFlyweight;
+package structural.flyweight.withOutFlyweight;
 
 public class ForestWithoutFlyweight {
     public static void main(String[] args) {

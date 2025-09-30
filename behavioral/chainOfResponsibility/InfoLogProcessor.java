@@ -1,6 +1,6 @@
-package DesignPatterns.behavioral.chainOfResponsibility;
+package behavioral.chainOfResponsibility;
 
-import DesignPatterns.behavioral.chainOfResponsibility.logProcessor.LogProcessor;
+import behavioral.chainOfResponsibility.logProcessor.LogProcessor;
 
 public class InfoLogProcessor extends LogProcessor {
 
