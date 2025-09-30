@@ -1,4 +1,4 @@
-package DesignPatterns.Creational.Builder;
+package Creational.Builder;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,8 +1,8 @@
-package DesignPatterns.Creational.AbstractFactory;
+package Creational.AbstractFactory;
 
-import DesignPatterns.Creational.AbstractFactory.factory.FactoryProducer;
-import DesignPatterns.Creational.AbstractFactory.factory.NotificationFactory;
-import DesignPatterns.Creational.AbstractFactory.notification.Notification;
+import Creational.AbstractFactory.factory.FactoryProducer;
+import Creational.AbstractFactory.factory.NotificationFactory;
+import Creational.AbstractFactory.notification.Notification;
 
 public class Main {
 

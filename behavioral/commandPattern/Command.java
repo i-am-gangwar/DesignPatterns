@@ -1,4 +1,4 @@
-package DesignPatterns.behavioral.commandPattern;
+package behavioral.commandPattern;
 
 public interface Command {
     void execute();

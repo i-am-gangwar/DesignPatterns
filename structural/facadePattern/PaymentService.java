@@ -1,4 +1,4 @@
-package DesignPatterns.structural.facadePattern;
+package structural.facadePattern;
 
 // Subsystem 1: Payment
 public class PaymentService {

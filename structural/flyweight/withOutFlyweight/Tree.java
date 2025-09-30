@@ -1,4 +1,4 @@
-package DesignPatterns.structural.flyweight.withOutFlyweight;
+package structural.flyweight.withOutFlyweight;
 
 // Each tree has all its properties (no sharing)
 public class Tree {

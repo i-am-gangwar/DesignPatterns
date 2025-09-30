@@ -1,4 +1,4 @@
-package DesignPatterns.structural.adapterPattern;
+package structural.adapterPattern;
 
 
 // Step 1: Target Interface

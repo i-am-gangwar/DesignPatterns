@@ -1,9 +1,9 @@
-package DesignPatterns.behavioral.commandPattern;
+package behavioral.commandPattern;
 
-import DesignPatterns.behavioral.commandPattern.concreteCommands.FanOffCommand;
-import DesignPatterns.behavioral.commandPattern.concreteCommands.FanOnCommand;
-import DesignPatterns.behavioral.commandPattern.concreteCommands.LightOffCommand;
-import DesignPatterns.behavioral.commandPattern.concreteCommands.LightOnCommand;
+import behavioral.commandPattern.concreteCommands.FanOffCommand;
+import behavioral.commandPattern.concreteCommands.FanOnCommand;
+import behavioral.commandPattern.concreteCommands.LightOffCommand;
+import behavioral.commandPattern.concreteCommands.LightOnCommand;
 
 // Step 5: Client
 public class CommandPatternWithUndo {

@@ -1,7 +1,7 @@
-package DesignPatterns.behavioral.commandPattern.concreteCommands;
+package behavioral.commandPattern.concreteCommands;
 
-import DesignPatterns.behavioral.commandPattern.Command;
-import DesignPatterns.behavioral.commandPattern.Fan;
+import behavioral.commandPattern.Command;
+import behavioral.commandPattern.Fan;
 
 public class FanOffCommand implements Command {
     private Fan fan;

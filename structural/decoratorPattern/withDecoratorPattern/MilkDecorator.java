@@ -1,4 +1,4 @@
-package DesignPatterns.structural.decoratorPattern.withDecoratorPattern;
+package structural.decoratorPattern.withDecoratorPattern;
 
 class MilkDecorator extends CoffeeDecorator {
     public MilkDecorator(Coffee coffee) {

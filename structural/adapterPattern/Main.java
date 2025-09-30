@@ -1,4 +1,4 @@
-package DesignPatterns.structural.adapterPattern;
+package structural.adapterPattern;
 
 // Step 4: Client uses only MediaPlayer interface
 public class Main {

@@ -1,4 +1,4 @@
-package DesignPatterns.structural.facadePattern;
+package structural.facadePattern;
 
 
 // Facade: Simplifies all subsystems

@@ -1,4 +1,4 @@
-package DesignPatterns.Creational.AbstractFactory.notification;
+package Creational.AbstractFactory.notification;
 
 public class PushNotification implements Notification{
 
