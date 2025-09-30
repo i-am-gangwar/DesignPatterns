@@ -1,4 +1,4 @@
-package DesignPatterns.behavioral.commandPattern;
+package behavioral.commandPattern;
 
 // Step 2: Receivers
 public class Light {

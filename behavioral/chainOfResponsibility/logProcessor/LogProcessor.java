@@ -1,4 +1,4 @@
-package DesignPatterns.behavioral.chainOfResponsibility.logProcessor;
+package behavioral.chainOfResponsibility.logProcessor;
 
 public  abstract class LogProcessor {
     public static final int INFO = 1;

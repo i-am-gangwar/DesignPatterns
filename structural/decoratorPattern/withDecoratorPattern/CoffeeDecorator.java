@@ -1,4 +1,4 @@
-package DesignPatterns.structural.decoratorPattern.withDecoratorPattern;
+package structural.decoratorPattern.withDecoratorPattern;
 
 abstract class CoffeeDecorator implements Coffee {
     protected Coffee coffee;   // composition

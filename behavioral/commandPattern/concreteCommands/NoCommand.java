@@ -1,6 +1,6 @@
-package DesignPatterns.behavioral.commandPattern.concreteCommands;
+package behavioral.commandPattern.concreteCommands;
 
-import DesignPatterns.behavioral.commandPattern.Command;
+import behavioral.commandPattern.Command;
 
 // Null Object Pattern (to avoid null checks)
 public class NoCommand implements Command {

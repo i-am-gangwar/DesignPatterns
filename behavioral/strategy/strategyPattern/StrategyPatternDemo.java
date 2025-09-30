@@ -1,4 +1,4 @@
-package DesignPatterns.behavioral.strategy.strategyPattern;
+package behavioral.strategy.strategyPattern;
 
 import behavioral.strategy.strategyPattern.concreteStrategies.CardPayment;
 import behavioral.strategy.strategyPattern.concreteStrategies.UPIPayment;

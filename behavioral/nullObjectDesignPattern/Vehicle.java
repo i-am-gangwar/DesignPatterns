@@ -1,4 +1,4 @@
-package DesignPatterns.behavioral.nullObjectDesignPattern;
+package behavioral.nullObjectDesignPattern;
 
 public interface Vehicle {
 

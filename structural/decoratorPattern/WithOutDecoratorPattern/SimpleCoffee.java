@@ -1,4 +1,4 @@
-package DesignPatterns.structural.decoratorPattern.WithOutDecoratorPattern;
+package structural.decoratorPattern.WithOutDecoratorPattern;
 
 class SimpleCoffee implements Coffee {
     @Override

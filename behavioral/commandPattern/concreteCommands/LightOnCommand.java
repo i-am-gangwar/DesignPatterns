@@ -1,7 +1,7 @@
-package DesignPatterns.behavioral.commandPattern.concreteCommands;
+package behavioral.commandPattern.concreteCommands;
 
-import DesignPatterns.behavioral.commandPattern.Command;
-import DesignPatterns.behavioral.commandPattern.Light;
+import behavioral.commandPattern.Command;
+import behavioral.commandPattern.Light;
 
 // Concrete Commands
 public class LightOnCommand implements Command {

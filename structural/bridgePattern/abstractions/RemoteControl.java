@@ -1,6 +1,6 @@
-package DesignPatterns.structural.bridgePattern.abstractions;
+package structural.bridgePattern.abstractions;
 
-import DesignPatterns.structural.bridgePattern.implementor.Device;
+import structural.bridgePattern.implementor.Device;
 
 public abstract class RemoteControl {
     protected Device device; // Bridge reference

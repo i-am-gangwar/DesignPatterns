@@ -1,4 +1,4 @@
-package DesignPatterns.behavioral.chainOfResponsibility.logProcessor;
+package behavioral.chainOfResponsibility.logProcessor;
 
 public class ErrorLogProcessor extends LogProcessor{
 

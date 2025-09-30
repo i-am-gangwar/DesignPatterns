@@ -1,4 +1,4 @@
-package DesignPatterns.structural.facadePattern;
+package structural.facadePattern;
 
 // Subsystem 3: Invoice
 public class InvoiceService {

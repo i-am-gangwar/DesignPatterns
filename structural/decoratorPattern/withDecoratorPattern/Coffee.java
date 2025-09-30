@@ -1,4 +1,4 @@
-package DesignPatterns.structural.decoratorPattern.withDecoratorPattern;
+package structural.decoratorPattern.withDecoratorPattern;
 
 interface Coffee {
 

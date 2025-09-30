@@ -1,4 +1,4 @@
-package DesignPatterns.structural.adapterPattern;
+package structural.adapterPattern;
 
 // Step 3: Adapter (bridge)
 public class MediaAdapter implements MediaPlayer{

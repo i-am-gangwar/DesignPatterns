@@ -1,4 +1,4 @@
-package DesignPatterns.structural.decoratorPattern.WithOutDecoratorPattern;
+package structural.decoratorPattern.WithOutDecoratorPattern;
 
 public class SugarCoffee extends SimpleCoffee {
 

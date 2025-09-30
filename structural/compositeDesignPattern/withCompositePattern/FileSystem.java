@@ -1,4 +1,4 @@
-package DesignPatterns.structural.compositeDesignPattern.withCompositePattern;
+package structural.compositeDesignPattern.withCompositePattern;
 
 // Component
 public interface FileSystem {
