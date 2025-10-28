@@ -1,0 +1,10 @@
+package creational.factory;
+
+public class CardPayment implements Payment {
+
+    @Override
+    public String processPayment(double amount) {
+        return "Card payment of amount " + amount + " is successful";
+    }
+
+}
