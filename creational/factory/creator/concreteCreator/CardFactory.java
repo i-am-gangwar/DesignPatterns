@@ -1,0 +1,12 @@
+package creational.factory.creator.concreteCreator;
+
+import creational.factory.concreteProduct.CardPayment;
+import creational.factory.creator.PaymentFactory;
+import creational.factory.product.Payment;
+
+public class CardFactory implements PaymentFactory {
+    @Override
+    public Payment createPayment() {
+        return new CardPayment();
+    }
+}

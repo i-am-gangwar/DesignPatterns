@@ -1,5 +1,11 @@
 package creational.factory;
 
+import creational.factory.creator.PaymentFactory;
+import creational.factory.creator.concreteCreator.CardFactory;
+import creational.factory.creator.concreteCreator.NetBankingFactory;
+import creational.factory.creator.concreteCreator.UPIFactory;
+import creational.factory.product.Payment;
+
 import java.util.Scanner;
 
 public class Main {
@@ -16,19 +22,19 @@ public class Main {
 
         if(num==1){
         // UPI
-        Payment upiPayment =  PaymentFactory.getPayment("UPI");
+        Payment upiPayment = new UPIFactory().createPayment();
         System.out.println(upiPayment.processPayment(500));
         break;
         }
         else if(num==2){
         // CARD
-        Payment cardPayment =  PaymentFactory.getPayment("CARD");
+        Payment cardPayment = new CardFactory().createPayment();
         System.out.println(cardPayment.processPayment(500));
         break;
         }
         else if(num==3){
         // UPI
-        Payment netBankingPayment =  PaymentFactory.getPayment("NETBANKING");
+        Payment netBankingPayment = new NetBankingFactory().createPayment();
         System.out.println(netBankingPayment.processPayment(500));
         break;
         }
